@@ -59,7 +59,7 @@ def pix_confirmation():
     
     return jsonify({"message": "The payment has been confirmed"})
 
-@app.route('/payment/pix/<int:payment_id>', methods=['GET'])
+@app.route('/payments/pix/<int:payment_id>', methods=['GET'])
 def payment_pix_page(payment_id):
     payment = Payment.query.get(payment_id)
 
